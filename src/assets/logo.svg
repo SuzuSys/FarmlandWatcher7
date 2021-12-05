@@ -1,0 +1,27 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 120 120">
+  <linearGradient id="f" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#B3E5FC" />
+    <stop offset="100%" stop-color="#01579B" />
+  </linearGradient>
+  <path d="M 0,100 
+           L 0,30 
+           A 30,30 90 0 1 30,0 
+           L 100,0 100,12.918 30,14
+           A 25,25 90 0 0 16,31
+           L 75,30
+           A 60,60 90 0 0 20,100
+           L 0,100
+           " fill="url(#f)"/>
+  <linearGradient id="w1" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#DCEDC8" />
+    <stop offset="100%" stop-color="#33691E" />
+  </linearGradient>
+  <path d="M 45,50  
+           L 71,100 100,50 90,50 71.5,85 55,50 45,50" fill ="url(#w1)"/>
+  <linearGradient id="w2" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#D7CCC8" />
+    <stop offset="100%" stop-color="#3E2723" />
+  </linearGradient>
+  <path d="M 20.45,75.5
+           L 35.5,100 70,50 60,50 36,85 24,66.5" fill="url(#w2)"/> 
+</svg>

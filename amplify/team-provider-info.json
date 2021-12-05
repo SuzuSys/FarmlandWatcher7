@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-farmlandwatcher7-dev-11200-authRole",
+      "UnauthRoleArn": "arn:aws:iam::137340531829:role/amplify-farmlandwatcher7-dev-11200-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::137340531829:role/amplify-farmlandwatcher7-dev-11200-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-farmlandwatcher7-dev-11200-deployment",
+      "UnauthRoleName": "amplify-farmlandwatcher7-dev-11200-unauthRole",
+      "StackName": "amplify-farmlandwatcher7-dev-11200",
+      "StackId": "arn:aws:cloudformation:us-east-1:137340531829:stack/amplify-farmlandwatcher7-dev-11200/05664d20-53d6-11ec-aa31-12e516baf99d",
+      "AmplifyAppId": "d1wr1ilo25qi87"
+    },
+    "categories": {
+      "auth": {
+        "farmlandwatcher7927c5a2f": {}
+      }
+    }
+  }
+}
