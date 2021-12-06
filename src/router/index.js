@@ -30,7 +30,7 @@ onAuthUIStateChange((nextAuthState, authData) => {
 
 let user;
 let count = 0;
-router.beforeResolve(async (to, from, next) => {
+router.beforeEach((to, from, next) => {
   console.log('beforeResolve');
   console.log(count);
   count++;
