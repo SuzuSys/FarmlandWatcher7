@@ -17,12 +17,15 @@ const router = new VueRouter({
 });
 
 onAuthUIStateChange((nextAuthState, authData) => {
+  console.log('detect onAuthUIStateChange');
   if (nextAuthState === AuthState.SignedIn) {
+    console.log('detect upper');
     store.commit('setUser', authData);
     router.push({ path: '/dashboard' });
   }
   if (!authData) {
     // user is not signed in...
+    console.log('detect downer');
     router.push({ path: '/signin' });
     store.commit('setUser', null);
   }
