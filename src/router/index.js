@@ -29,20 +29,9 @@ onAuthUIStateChange((nextAuthState, authData) => {
 });
 
 let user;
-let count = 0;
-router.beforeEach((to, from, next) => {
-  console.log('beforeResolve');
-  console.log(count);
-  count++;
-  to.matched.some(record => {
-    console.log(record);
-    console.log(record.meta);
-    console.log(record.meta.requiresAuth);
-  });
-  if (to.matched.some(record => record.meta.requiresAuth)) {
-    console.log('Auth page');
+router.beforeResolve(async (to, from, next) => {
+  if (to.matched.some(record => record.meta.requireAuth)) {
     user = store.state.user;
-    console.log(user);
     if (!user) {
       return next({
         path: '/signin'
