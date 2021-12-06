@@ -22,7 +22,7 @@ export default [
     children: [
       {
         name: 'Dashboard',
-        path: '',
+        path: '/dashboard',
         component: () => import('@/views/Dashboard')
       }
     ]
