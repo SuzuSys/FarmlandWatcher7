@@ -29,13 +29,16 @@ onAuthUIStateChange((nextAuthState, authData) => {
 });
 
 let user;
+let count = 0;
 router.beforeResolve(async (to, from, next) => {
   console.log('beforeResolve');
-  console.log(to.matched.some(record => {
+  console.log(count);
+  count++;
+  to.matched.some(record => {
     console.log(record);
     console.log(record.meta);
-    return record.meta.requiresAuth;
-  }));
+    console.log(record.meta.requiresAuth);
+  });
   if (to.matched.some(record => record.meta.requiresAuth)) {
     console.log('Auth page');
     user = store.state.user;
