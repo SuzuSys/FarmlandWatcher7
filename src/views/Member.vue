@@ -22,7 +22,7 @@
 export default {
   name: 'Member',
   data: () => ({
-    drawer: null
+    drawer: false
   })
 };
 </script>
