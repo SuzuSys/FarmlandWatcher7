@@ -45,6 +45,7 @@ export default {
   },
   beforeDestroy() {
     this.unsubscribeAuth();
+    return onAuthUIStateChange;
   }
 };
 </script>

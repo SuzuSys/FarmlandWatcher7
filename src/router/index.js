@@ -30,11 +30,14 @@ onAuthUIStateChange((nextAuthState, authData) => {
 
 let user;
 router.beforeResolve(async (to, from, next) => {
+  console.log('beforeResolve');
   if (to.matched.some(record => record.meta.requiresAuth)) {
+    console.log('Auth page');
     user = store.state.user;
+    console.log(user);
     if (!user) {
       return next({
-        path: '/signin',
+        path: '/signin'
       });
     }
     return next();
