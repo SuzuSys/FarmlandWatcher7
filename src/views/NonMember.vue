@@ -6,9 +6,9 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
-        @click.stop.prevent="goSignIn"
+        @click.stop.prevent="goDashboard"
       >
-        Sign In
+        Dashboard
       </v-btn>
     </v-app-bar>
     <v-main>
@@ -21,8 +21,8 @@
 export default {
   name: 'NonMember',
   methods: {
-    goSignIn: function() {
-      this.$router.push({ path: '/signin' });
+    goDashboard: function() {
+      this.$router.push({ path: '/dashboard' });
     }
   }
 };
