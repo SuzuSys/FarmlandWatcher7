@@ -19,7 +19,7 @@ const router = new VueRouter({
 onAuthUIStateChange((nextAuthState, authData) => {
   if (nextAuthState === AuthState.SignedIn) {
     store.commit('setUser', authData);
-    router.push({ path: '/' }).catch(() => {});
+    router.push({ path: '/dashboard' }).catch(() => {});
   }
   if (!authData) {
     // user is not signed in...
