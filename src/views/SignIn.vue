@@ -1,16 +1,6 @@
 <template>
   <div>
-    <amplify-authenticator username-alias="email">
-      <amplify-sign-up
-        slot="sign-up"
-        username-alias="email"
-        :form-fields.prop="formFields"
-      ></amplify-sign-up>
-      <amplify-sign-in
-        slot="sign-in"
-        username-alias="email"
-      ></amplify-sign-in>
-    </amplify-authenticator>
+    <amplify-authenticator></amplify-authenticator>
   </div>
 </template>
 

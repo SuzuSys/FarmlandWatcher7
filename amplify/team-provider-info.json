@@ -13,7 +13,14 @@
     },
     "categories": {
       "auth": {
-        "farmlandwatcher7927c5a2f": {}
+        "farmlandwatcher7927c5a2f": {},
+        "true": {}
+      },
+      "function": {
+        "echofunction": {
+          "deploymentBucketName": "amplify-farmlandwatcher7-dev-11200-deployment",
+          "s3Key": "amplify-builds/echofunction-7a3034692b45624f484b-build.zip"
+        }
       }
     }
   }

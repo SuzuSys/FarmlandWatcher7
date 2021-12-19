@@ -1,0 +1,16 @@
+{
+  "resourceName": "image",
+  "policyUUID": "ad2e7211",
+  "bucketName": "farmlandwatcher78fa081a3d3e847dd83c994d4f687f55",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

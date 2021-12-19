@@ -24,6 +24,11 @@ export default [
         name: 'Dashboard',
         path: '/dashboard',
         component: () => import('@/views/Dashboard')
+      },
+      {
+        name: 'Profile',
+        path: '/profile',
+        component: () => import('@/views/Profile')
       }
     ]
   }

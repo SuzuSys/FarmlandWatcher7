@@ -1,45 +1,45 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createIotName = /* GraphQL */ `
+  mutation CreateIotName(
+    $input: CreateIotNameInput!
+    $condition: ModelIotNameConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createIotName(input: $input, condition: $condition) {
       id
       name
-      description
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updateIotName = /* GraphQL */ `
+  mutation UpdateIotName(
+    $input: UpdateIotNameInput!
+    $condition: ModelIotNameConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updateIotName(input: $input, condition: $condition) {
       id
       name
-      description
       createdAt
       updatedAt
+      owner
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deleteIotName = /* GraphQL */ `
+  mutation DeleteIotName(
+    $input: DeleteIotNameInput!
+    $condition: ModelIotNameConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deleteIotName(input: $input, condition: $condition) {
       id
       name
-      description
       createdAt
       updatedAt
+      owner
     }
   }
 `;
